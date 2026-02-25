@@ -171,7 +171,7 @@ color: var(--primary-red);
 
 /* BUTTON */
 .form-btn {
-background: var(--primary-red);
+background: #f9b233;
 color: var(--white);
 padding: 15px;
 border: none;
