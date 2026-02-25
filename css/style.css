@@ -160,3 +160,36 @@ transform:translateY(0);
 from {transform:translateY(-50px); opacity:0;}
 to {transform:translateY(0); opacity:1;}
 }
+
+.page-header {
+padding:80px 10%;
+text-align:center;
+background:#1a1a1a;
+}
+
+.about-section {
+padding:60px 10%;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about-content h2 {
+color:#f9b233;
+margin-bottom:20px;
+}
+
+.mission-vision {
+display:flex;
+justify-content:center;
+gap:40px;
+padding:60px 10%;
+flex-wrap:wrap;
+}
+
+.mission, .vision {
+background:#1c1c1c;
+padding:30px;
+border-radius:8px;
+max-width:400px;
+  }
