@@ -1,0 +1,162 @@
+body {
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#111;
+color:white;
+}
+
+header {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#000;
+}
+
+nav a {
+color:white;
+margin-left:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover {
+color:#f9b233;
+}
+
+.hero {
+height:90vh;
+background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content h1 {
+font-size:50px;
+animation:slideDown 1s ease;
+}
+
+.hero-buttons {
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.btn-primary, .btn-secondary {
+padding:15px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.btn-primary {
+background:#f9b233;
+color:black;
+}
+
+.btn-secondary {
+background:transparent;
+border:2px solid #f9b233;
+color:#f9b233;
+}
+
+.services-container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:50px 10%;
+}
+
+.service-card {
+background:#1c1c1c;
+padding:30px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.service-card:hover {
+transform:translateY(-10px);
+background:#222;
+}
+
+.contact-form form {
+display:flex;
+flex-direction:column;
+width:400px;
+margin:auto;
+gap:15px;
+}
+
+input, textarea {
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button {
+padding:15px;
+background:#f9b233;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.whatsapp-float {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:25px;
+padding:15px;
+border-radius:50%;
+}
+
+.gallery {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:50px 10%;
+}
+
+.gallery-img {
+width:100%;
+cursor:pointer;
+border-radius:8px;
+}
+
+.lightbox {
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+}
+
+.lightbox img {
+max-width:90%;
+max-height:80%;
+}
+
+.fade-in {
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade-in.show {
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes slideDown {
+from {transform:translateY(-50px); opacity:0;}
+to {transform:translateY(0); opacity:1;}
+}
