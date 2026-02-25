@@ -31,13 +31,40 @@
     </div>
 </section>
 
-<section class="contact-form">
-<form id="whatsappForm">
-<input type="text" id="name" placeholder="Full Name" required>
-<input type="tel" id="phone" placeholder="Phone Number" required>
-<textarea id="message" placeholder="Describe your project..." required></textarea>
-<button type="submit">Submit</button>
-</form>
+<section class="contact-section">
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <h2>Request A Professional Quote</h2>
+            <p>Fill in your details and our team will contact you immediately.</p>
+        </div>
+
+        <div class="contact-right">
+            <form id="whatsappForm">
+
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label>Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" id="phone" required>
+                    <label>Phone Number</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" rows="4" required></textarea>
+                    <label>Describe Your Project</label>
+                </div>
+
+                <button type="submit" class="form-btn">
+                    Send To WhatsApp
+                </button>
+
+            </form>
+        </div>
+
+    </div>
 </section>
 
 <!-- CTA SECTION -->
